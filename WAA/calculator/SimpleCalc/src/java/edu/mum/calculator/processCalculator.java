@@ -80,7 +80,7 @@ public class processCalculator extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
       
-        if ((!format) || (num1 < 0 || num1 > 100 || num2 < 0 || num2 > 100)) {
+        if ((!format) || (num1 < 0 || num1 > 1000 || num2 < 0 || num2 > 1000)) {
             out.println("<h3>Number one and Number two should be between 1 and 100 or the format is not right</h3>");
             inRange = false;
         }
