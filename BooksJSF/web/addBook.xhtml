@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Add book </title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Title: <h:inputText value="#{bookbean.book.title}"/><br/>
+            Pages: <h:inputText value="#{bookbean.book.pages}"/><br/>
+            Type: <h:selectOneMenu value="#{bookbean.book.type}">
+                <f:selectItem itemValue="Comedy" itemLabel="Comedy"/>
+                <f:selectItem itemValue="Adventure" itemLabel="Adventure"/>
+                <f:selectItem itemValue="Romance" itemLabel="Romance"/>
+            </h:selectOneMenu><br/>
+            <br/>
+            Our System has ${bookbean.books.size()} books<br/><br/>
+            <h:commandButton value="Clear" action="#{bookbean.removeAllBooks()}"/>
+            <h:commandButton value="Add" action="#{bookbean.addBook()}"/>
+            <h:commandButton value="Cancel" action="login.jsf"/>
+        </h:form>
+    </h:body>
+</html>
+
