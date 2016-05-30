@@ -5,15 +5,19 @@
  */
 package edu.mum.cs545.homework.pojo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author kb
  */
 public class Book {
-    
+
     private String title;
-     private int pages;
+    private int pages;
     private String type;
+    private List<String> types = new ArrayList<>();
 
     public Book(String title, int pages, String type) {
         this.title = title;
@@ -22,11 +26,18 @@ public class Book {
     }
 
     public Book() {
-    
+        this.types.add("Comedy");
+        this.types.add("Romance");
+        this.types.add("Adventure");
+        this.types.add("History");
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public List<String> getTypes() {
+        return types;
     }
 
     public int getPages() {
@@ -48,6 +59,5 @@ public class Book {
     public void setType(String type) {
         this.type = type;
     }
-   
-    
+
 }

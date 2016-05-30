@@ -11,9 +11,8 @@
             Title: <h:inputText value="#{bookbean.book.title}"/><br/>
             Pages: <h:inputText value="#{bookbean.book.pages}"/><br/>
             Type: <h:selectOneMenu value="#{bookbean.book.type}">
-                <f:selectItem itemValue="Comedy" itemLabel="Comedy"/>
-                <f:selectItem itemValue="Adventure" itemLabel="Adventure"/>
-                <f:selectItem itemValue="Romance" itemLabel="Romance"/>
+                <f:selectItems value="#{bookbean.book.types}" />
+           
             </h:selectOneMenu><br/>
             <br/>
             Our System has ${bookbean.books.size()} books<br/><br/>
