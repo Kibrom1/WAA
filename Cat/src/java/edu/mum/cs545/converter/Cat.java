@@ -7,7 +7,7 @@ package edu.mum.cs545.converter;
 
 /**
  *
- * @author csfaculty
+ * @author kb
  */
 public class Cat {
     private String name;

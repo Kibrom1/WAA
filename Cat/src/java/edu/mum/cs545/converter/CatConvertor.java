@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author mulu
+ * @author kb
  */
 @FacesConverter("catConvertor")
 public class CatConvertor implements Converter {
